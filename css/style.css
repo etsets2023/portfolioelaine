@@ -52,6 +52,11 @@ a{
     color: white;
 }
 
+#menu-hamb{
+    width: 30px;
+    display: none;
+}
+
 a:hover{
     text-decoration: underline;
 }
@@ -460,10 +465,24 @@ ul{
 
     #header{
         padding: 20px 40px;
+        align-items: center;
     }
 
     .navbar{
         display: none;
+    }
+
+    #menu-hamb{
+        display: block;
+        cursor: pointer;
+       
+    }
+
+    .menu{
+        font-display: flex;
+        flex-direction: column;
+        align-items: start;
+        
     }
     
     a{
@@ -472,7 +491,10 @@ ul{
 
     ul{
         gap: 20px;
-        padding-left: 30px;
+        
+        display:flex;
+        flex-direction: column;
+
     }
 
     .person-background{
@@ -485,7 +507,6 @@ ul{
 
     #person{
         gap: 30px;
-        border: 1px solid white;
     }
 
     .person-name{
@@ -559,7 +580,9 @@ ul{
 }
 
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+  
+}
 
 /* Dispostivos Médios (Tablets deitados, 768px para cima) */
 @media only screen and (min-width: 768px) {...}
