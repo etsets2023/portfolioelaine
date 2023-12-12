@@ -453,6 +453,73 @@ ul{
     right: 5px;
  }
 
+/********************Media Queries*******************/
+
+ /* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+
+    #header{
+        padding: 20px 40px;
+    }
+    
+    a{
+        font-size: 1.5rem;
+    }
+
+    ul{
+        gap: 20px;
+        padding-left: 30px;
+    }
+
+    #person{
+        border: 1px solid white;
+        gap: 30px;
+    }
+
+    .person-name{
+        font-size: 2rem;/*a medida rem se encaixa melhor na responsividade, está sendo equivalente a 45px pois no body coloquei a font size de 10px*/;
+     }
+
+    .person-subtitulo {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+     .about-container{
+        flex-direction: column;
+        gap:50px;
+    }
+
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text button{
+        margin-top: 50px;
+        width: 350px;
+    }
+
+   #contacts{
+    margin-top: 940px;
+   }
+    
+
+  
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {...}
+
+/* Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {...}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {...}
+​
+​/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {...}
 
 
 
