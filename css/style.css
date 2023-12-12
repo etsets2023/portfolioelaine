@@ -456,10 +456,14 @@ ul{
 /********************Media Queries*******************/
 
  /* Smartphones (600px para baixo) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 320px) {
 
     #header{
         padding: 20px 40px;
+    }
+
+    .navbar{
+        display: none;
     }
     
     a{
@@ -471,9 +475,17 @@ ul{
         padding-left: 30px;
     }
 
+    .person-background{
+        display: none;
+    }
+
+    .person-content{
+        width: 100%;
+    }
+
     #person{
-        border: 1px solid white;
         gap: 30px;
+        border: 1px solid white;
     }
 
     .person-name{
@@ -485,7 +497,15 @@ ul{
         text-align: center;
     }
 
-     .about-container{
+    #about{
+        padding: 20px;
+    }
+
+    .about-background img{
+        width: 100%;
+    }
+
+    .about-container{
         flex-direction: column;
         gap:50px;
     }
@@ -494,19 +514,48 @@ ul{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        font-size: 1.5rem;
     }
 
     .about-text button{
         margin-top: 50px;
-        width: 350px;
+        width: 200px;
     }
 
-   #contacts{
-    margin-top: 940px;
-   }
-    
+    #projects{
+        margin-top: 100px;
+        padding: 20px;
+        width: 100%;
+    }
 
-  
+    .projects-card{
+        width: 250px;   
+    }
+
+    .projects-card-content-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .projects-card-content button{
+        background: var(--color-roxo);
+        padding: 15px 50px; 
+}
+    #contacts{  
+        padding: 20px;
+        margin-top: 860px;
+    }
+
+    .contacts-container{    
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .whats{
+        right: -15px;
+     }
 }
 
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
