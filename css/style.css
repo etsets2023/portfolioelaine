@@ -387,21 +387,60 @@ ul{
 }
 
 #contacts{
-    margin-top: 150px;
+    height: 100vh;
+    margin-top: 200px;
     padding: 50px;
     padding-left: 85px;
     /*border: 1px solid white;*/
 }
 
 #contacts h2{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .contacts-container{
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    align-items: end;
+    justify-content: space-between;
     margin-top: 40px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 350px;
+    gap:5px;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+input, textarea{
+    width: 350px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+input{
+    height: 30px;
+}
+
+textarea{
+    height: 150px;
+}
+
+.card button{
+    width: 350px;
+    height: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .localizacao, .email{
@@ -428,6 +467,10 @@ ul{
 .email a:hover {
    color: var(--color-roxo);
    transition: .3s ease;
+}
+
+.container{
+    /*border: 1px solid white;*/
 }
 
 .redes{
@@ -590,7 +633,7 @@ ul{
 
 /* Dispostivos Largos (laptops/desktops, 992px para cima) */
 @media only screen and (min-width: 992px) {...}
-​
+
 ​/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
 @media only screen and (min-width: 1200px) {...}
 
