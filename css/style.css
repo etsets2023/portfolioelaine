@@ -468,7 +468,7 @@ ul{
 /********************Media Queries*******************/
 
  /* Smartphones (600px para baixo) */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
 
     #header{
         padding: 20px 30px;
