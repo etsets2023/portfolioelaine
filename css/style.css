@@ -72,13 +72,8 @@ a:hover{
 }
 
 .header-container h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 4px var(--color-white);
-}
-
-.header-container span{
-    color: var(--color-roxo);
-    text-shadow: 2px 2px 4px var(--color-roxo);
 }
 
 ul{
@@ -90,36 +85,42 @@ ul{
 }
 
 
-
-
-
 #person{
     height: 100vh;
     width: 100%;
 
+   
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    gap:50px;
-    
-
+    justify-content: space-around;
     /*border: 1px solid white;*/
+    padding-top: 200px;
+    
    
 }
 
 .person-content{
-    /*border: 1px solid white;*/
     height: 100%;
     width: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
-    padding-top: 150px;
+    /*border: 1px solid white;*/     
 }
+
+.person-background{
+    /*border: 1px solid white;*/
+    width: 50%;
+    padding-right: 50px;
+}
+.person-background img{
+   width: 100%;
+   height: 500px;
+}
+
+
 
 .person-name{
     padding: 0 4px;
@@ -129,6 +130,8 @@ ul{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    /*border: 1px solid white;*/
+    margin-bottom: 20px;
  }
 
  h1 {
@@ -182,7 +185,7 @@ ul{
     }
  }
 
- .person-background{
+ /*.person-background{
     height: 100%;
     width: 50%;
     background-image: url(/assets/codigo-front.jpg);
@@ -192,19 +195,23 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border: 1px solid white;*/
+    border: 1px solid white;
  }
+ */
 
- .person-background::after{
+   .person-background::before{
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-
-    height: 100%;
-    width: 100%;
+    right: 0px;
+    
+    height: 650px;
+    width: 50%;
     background:linear-gradient(270deg, transparent 30%, black);
- }
+   }
+    
+ 
+ 
  /********** End Section person *************/
 
 /********** Section about **************/
@@ -455,13 +462,13 @@ ul{
     width: 100px;
     position: fixed;
     bottom: 5px;
-    right: 5px;
+    right: 20px;
  }
 
 /********************Media Queries*******************/
 
  /* Smartphones (600px para baixo) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
 
     #header{
         padding: 20px 30px;
@@ -497,16 +504,15 @@ ul{
 
     }
 
+    .person-content{    
+        width: 100%;     
+    }
+    
     .person-background{
-        display: none;
-    }
-
-    .person-content{
         width: 100%;
-    }
-
-    #person{
-        gap: 30px;
+        
+        padding: 30px;
+        display: none;
     }
 
     .person-name{
@@ -519,11 +525,7 @@ ul{
     }
 
     #about{
-        padding: 20px;
-    }
-
-    .about-background img{
-        width: 100%;
+        padding: 20px;   
     }
 
     .about-container{
@@ -565,7 +567,7 @@ ul{
 }
     #contacts{  
         padding: 20px;
-        margin-top: 860px;
+        margin-top: 880px;
     }
 
     .contacts-container{    
@@ -580,9 +582,8 @@ ul{
 }
 
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
-@media only screen and (min-width: 600px) {
-  
-}
+@media only screen and (min-width: 600px){...}
+
 
 /* Dispostivos Médios (Tablets deitados, 768px para cima) */
 @media only screen and (min-width: 768px) {...}
