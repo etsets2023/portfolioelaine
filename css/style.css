@@ -620,6 +620,10 @@ textarea{
         align-items: start;
     }
 
+    .localizacao{
+        margin-top: 80px;
+    }
+
     .whats{
         right: -15px;
      }
